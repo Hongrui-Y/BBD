@@ -1,0 +1,23 @@
+random_seed: 0
+dataset_root: ../datasets
+attack_type_list:
+  [
+  'badnet',
+  'badnet_colorful',
+  'lc',
+  'blended_hellokitty_αtrain0.2αtest0.2',
+  'ssba',
+  'iab',
+  'wanet',
+  'sig_pratio_0.04_delta_40',
+  ]
+dataset_name: cifar10
+save_root: record/
+log_dir: record/
+model_name: PreActResNet18
+num_workers: 4
+semi:
+  mixmatch:
+    temperature: 0.5
+    alpha: 0.75
+
